@@ -15,7 +15,7 @@ JS.require('Eventoverse', function (a) {
           top: 0,
           right: 5,
           // Setting the bottom to 0 crops off the Y axis
-          bottom: 0,
+          bottom: 50,
           left: 35
         },
         base_width: 300,
@@ -27,8 +27,8 @@ JS.require('Eventoverse', function (a) {
     line_chart.addElement(Eventoverse.Graphs.Lines);
 
     // You can comment out any of these to disable the feature
-    line_chart.addElement(Eventoverse.Graphs.MinLine);
-    line_chart.addElement(Eventoverse.Graphs.MaxLine);
+    // line_chart.addElement(Eventoverse.Graphs.MinLine);
+    // line_chart.addElement(Eventoverse.Graphs.MaxLine);
     line_chart.addElement(Eventoverse.Graphs.Tooltips, {
         tip_formatter: function(d) {
             // Format the tool tips as you like
@@ -36,7 +36,7 @@ JS.require('Eventoverse', function (a) {
         }
     });
 
-  vals = [
+    vals = [
       { key: "key1", // key, identifier for data values
         values: [
           { x: 1371990607, // timestamp
